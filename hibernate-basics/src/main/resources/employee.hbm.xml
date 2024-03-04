@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.training.springmvc.entity.Employee" table="EMP">
+        <id name="empId" type="int">
+            <column name = "emp_id" />
+            <generator class="increment"/>
+        </id>
+        <property name="empName" type="java.lang.String"><column name="emp_name" /></property>
+        <property name="role" type="java.lang.String"><column name="role"/></property>
+    </class>
+</hibernate-mapping>
